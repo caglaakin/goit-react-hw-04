@@ -80,13 +80,25 @@ function App() {
   return (
     <>
       <SearchBar onSearch={handleSearch} />
-      {loader && <GridLoader />}
+      {loader && (
+        <div className="loader">
+          <GridLoader
+            margin={8}
+            size={40}
+            color="#470c7eb9"
+          />
+        </div>
+      )}
       {error && <p>Something went wrong... Please try again later</p>}
       {images.length > 0 && (
         <ImageGallery images={images} onImagesClick={handleOpenModal} />
       )}
       {images.length > 0 && !loader && !error && page < totalPage && (
-        <button type="button" onClick={handleLoadMore}>
+        <button
+          type="button"
+          onClick={handleLoadMore}
+          className="loadMoreButton"
+        >
           Load More
         </button>
       )}

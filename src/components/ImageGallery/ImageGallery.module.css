@@ -1,0 +1,12 @@
+.imageGallery{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline-start: 0;
+    row-gap: 10px;
+    justify-content: space-between;
+}
+
+.imageGalleryItem{
+    width: calc((100% - 40px) / 4);
+}

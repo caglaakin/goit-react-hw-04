@@ -1,11 +1,13 @@
-export const ImageCard = ({ image, onClick } ) => {
+import css from './ImageCard.module.css';
+
+export const ImageCard = ({ image, onClick }) => {
   const handleClick = () => { 
     onClick(image);
   };
 
   return (
     <div onClick={handleClick}>
-      <img src={image.urls.small} alt={image.alt_description} />
+      <img className={css.ImageCard} src={image.urls.small} alt={image.alt_description} />
     </div>
   );
 };

@@ -1,0 +1,33 @@
+.headerSearch {
+    background-color: #470c7eb9;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    height: 35px;
+}
+
+.input {
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.buttonSearch{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+}
+
+.iconSearch{
+    width: 20px;
+    height: 20px;
+}
