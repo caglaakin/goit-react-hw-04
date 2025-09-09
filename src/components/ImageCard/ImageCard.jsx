@@ -1,8 +1,8 @@
 import css from './ImageCard.module.css';
 
-export const ImageCard = ({ image, onClick }) => {
+export const ImageCard = ({ image, onClick, index }) => {
   const handleClick = () => { 
-    onClick(image);
+    onClick(index);
   };
 
   return (

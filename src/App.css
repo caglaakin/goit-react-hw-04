@@ -1,4 +1,4 @@
-.loader{
+.loader {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,7 @@
     height: 100vh;
 }
 
-.loadMoreButton{
+.loadMoreButton {
     display: block;
     margin: 10px auto;
     width: 120px;
@@ -21,7 +21,67 @@
     border-radius: 4px;
 }
 
-.loadMoreButton:hover{
+.loadMoreButton:hover {
     background-color: #c195eb;
     transition: all 0.3s ease-in-out;
+}
+
+.imageDescription {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 5px #000;
+    position: fixed;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.imageDescription p {
+    margin: 10px 0;
+}
+
+.closeModalButton {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 1001;
+    text-shadow: 0 0 5px #000;
+}
+
+.navButton {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.navButton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prevButton {
+    left: 20px;
+}
+
+.nextButton {
+    right: 20px;
 }
